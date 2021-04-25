@@ -1,13 +1,4 @@
 /out/
-/.idea/.gitignore
 /algorithm-challenge.iml
-/.idea/compiler.xml
-/.idea/jarRepositories.xml
-/target/classes/cn/mitrecx/LeetCode1.class
-/target/classes/cn/mitrecx/LeetCode1319$Solution.class
-/target/classes/cn/mitrecx/LeetCode1319$UnionFind.class
-/target/classes/cn/mitrecx/LeetCode1319.class
-/target/classes/LeetCode1319.pdf
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/vcs.xml
+/.idea/
+/target/
