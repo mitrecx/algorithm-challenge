@@ -1,5 +1,5 @@
 package cn.mitrecx;
-
+//
 public class LeetCode34 {
     public int[] searchRange(int[] nums, int target) {
         if (nums == null || nums.length == 0) {
