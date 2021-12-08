@@ -1,4 +1,4 @@
-package cn.mitrecx.proxy.java;
+package cn.mitrecx.proxy.java.util;
 
 import sun.misc.ProxyGenerator;
 import java.io.FileOutputStream;
