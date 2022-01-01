@@ -6,6 +6,11 @@ public class LeetCode8 {
         System.out.println(leetCode8.myAtoi("42"));
         System.out.println(leetCode8.myAtoi("   -42"));
         System.out.println(leetCode8.myAtoi("4193 with words"));
+        System.out.println(leetCode8.myAtoi("-2147483648"));
+        System.out.println(leetCode8.myAtoi_2("-2147483648"));
+        System.out.println(leetCode8.myAtoi_2("2147483647"));
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MIN_VALUE);
     }
 
     public int myAtoi(String s) {
@@ -44,5 +49,54 @@ public class LeetCode8 {
             }
         }
         return result;
+    }
+
+    public int myAtoi_2(String s) {
+        int len = s.length();
+        int res = 0;
+        if (len == 0) {
+            return res;
+        }
+
+        boolean isNegative = false;
+        int i = 0;
+        while (i < len && s.charAt(i) == ' ') {
+            i++;
+        }
+
+        if (i == len) {
+            return res;
+        }
+        if (i < len) {
+            if (s.charAt(i) == '-') {
+                isNegative = true;
+                i++;
+            } else if (s.charAt(i) == '+') {
+                i++;
+            }
+        }
+        while (i < len) {
+            int digit = s.charAt(i) - '0';
+            if (digit < 0 || digit > 9) {
+                break;
+            }
+            // 数字 严格"大于" Integer.MAX_VALUE 时, 才退出; "等于" 不退出.
+            // 所以,
+            // 若 res 最终结果是 Integer.MIN_VALUE 则在这里会退出.
+            // 若 res 最终结果是 Integer.MAX_VALUE 则在这里不会退出.
+            if (Integer.MAX_VALUE / 10 < res ||
+                    Integer.MAX_VALUE / 10 == res && Integer.MAX_VALUE % 10 < digit) {
+                if (isNegative) {
+                    return Integer.MIN_VALUE;
+                }
+                return Integer.MAX_VALUE;
+            }
+            res = (res * 10) + digit;
+            i++;
+        }
+        if (isNegative) {
+            return (res * -1);
+        }
+        return res;
     }
 }
