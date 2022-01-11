@@ -34,12 +34,12 @@ public class LeetCode36 {
                     // 行
                     rows[i][index] += 1;
                     // 列
-                    columns[index][j] += 1;
+                    columns[j][index] += 1;
                     // 小九宫格
                     subBoards[i / 3][j / 3][index] += 1;
 
                     if (rows[i][index] > 1
-                            || columns[index][j] > 1
+                            || columns[j][index] > 1
                             || subBoards[i / 3][j / 3][index] > 1) {
                         return false;
                     }
