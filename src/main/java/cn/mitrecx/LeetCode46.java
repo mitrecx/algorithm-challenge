@@ -3,6 +3,10 @@ package cn.mitrecx;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 回溯算法 可以搜索得到所有的答案, 包括最优解.
+ * 但是本质上它是一种遍历算法(对树的深度优先遍历), 时间复杂度比较高.
+ */
 public class LeetCode46 {
     public static void main(String[] args) {
         int[] nums = {1, 2, 3};
