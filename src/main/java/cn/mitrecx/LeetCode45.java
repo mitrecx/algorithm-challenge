@@ -1,5 +1,11 @@
 package cn.mitrecx;
 
+/**
+ * 45. Jump Game II
+ * https://leetcode.com/problems/jump-game-ii/
+ *
+ * @see LeetCode55
+ */
 public class LeetCode45 {
     public static void main(String[] args) {
         LeetCode45 leetCode45 = new LeetCode45();
