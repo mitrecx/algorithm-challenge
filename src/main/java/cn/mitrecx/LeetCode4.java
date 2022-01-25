@@ -1,6 +1,17 @@
 package cn.mitrecx;
 
+/**
+ * 4. Median of Two Sorted Arrays
+ * https://leetcode.com/problems/median-of-two-sorted-arrays/
+ */
 public class LeetCode4 {
+    public static void main(String[] args) {
+        int[] nums1 = {1, 2};
+        int[] nums2 = {3, 4};
+        LeetCode4 leetCode4 = new LeetCode4();
+        System.out.println(leetCode4.findMedianSortedArrays(nums1, nums2));
+    }
+
     int findKth2(int[] nums1, int i, int[] nums2, int j, int k) {
         if (i >= nums1.length) return nums2[j + k - 1];
         if (j >= nums2.length) return nums1[i + k - 1];
@@ -13,7 +24,6 @@ public class LeetCode4 {
             return findKth2(nums1, i, nums2, j + k / 2, k - k / 2);
         }
     }
-
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int k1 = (nums1.length + nums2.length + 1) / 2;
@@ -42,12 +52,5 @@ public class LeetCode4 {
         } else {
             return findKth(nums1, index1, nums2, midIndex2 + 1, k - k / 2);
         }
-    }
-
-    public static void main(String[] args) {
-        int[] nums1 = {1, 2};
-        int[] nums2 = {3, 4};
-        LeetCode4 leetCode4 = new LeetCode4();
-        System.out.println(leetCode4.findMedianSortedArrays(nums1, nums2));
     }
 }

@@ -1,5 +1,8 @@
 package cn.mitrecx;
 
+/**
+ * 8. String to Integer (atoi)
+ */
 public class LeetCode8 {
     public static void main(String[] args) {
         LeetCode8 leetCode8 = new LeetCode8();

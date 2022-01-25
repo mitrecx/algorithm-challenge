@@ -1,5 +1,8 @@
 package cn.mitrecx;
 
+/**
+ * 31. Next Permutation
+ */
 public class LeetCode31 {
     public static void main(String[] args) {
         LeetCode31 leetCode31 = new LeetCode31();

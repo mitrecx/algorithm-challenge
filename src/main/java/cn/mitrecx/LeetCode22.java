@@ -3,6 +3,9 @@ package cn.mitrecx;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 22. Generate Parentheses
+ */
 public class LeetCode22 {
     public static void main(String[] args) {
         LeetCode22 leetCode22 = new LeetCode22();

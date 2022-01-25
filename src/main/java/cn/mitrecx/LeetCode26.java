@@ -1,5 +1,8 @@
 package cn.mitrecx;
-//easy
+
+/**
+ * 26. Remove Duplicates from Sorted Array
+ */
 public class LeetCode26 {
     public static void main(String[] args) {
         LeetCode26 leetCode26 = new LeetCode26();

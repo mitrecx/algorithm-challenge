@@ -1,5 +1,8 @@
 package cn.mitrecx;
 
+/**
+ * 27. Remove Element
+ */
 public class LeetCode27 {
     public static void main(String[] args) {
         LeetCode27 leetCode27 = new LeetCode27();

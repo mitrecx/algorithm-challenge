@@ -1,5 +1,8 @@
 package cn.mitrecx;
 
+/**
+ * 50. Pow(x, n)
+ */
 public class LeetCode50 {
     public static void main(String[] args) {
         LeetCode50 leetCode50 = new LeetCode50();

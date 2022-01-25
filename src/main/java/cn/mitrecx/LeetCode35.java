@@ -1,5 +1,8 @@
 package cn.mitrecx;
 
+/**
+ * 35. Search Insert Position
+ */
 public class LeetCode35 {
     public static void main(String[] args) {
         LeetCode35 leetCode35 = new LeetCode35();

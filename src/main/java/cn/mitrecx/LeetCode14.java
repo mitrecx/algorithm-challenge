@@ -1,5 +1,8 @@
 package cn.mitrecx;
 
+/**
+ * 14. Longest Common Prefix
+ */
 public class LeetCode14 {
     public static void main(String[] args) {
         String[] strs = {"flower", "flow", "flight"};

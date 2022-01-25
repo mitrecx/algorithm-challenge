@@ -3,6 +3,9 @@ package cn.mitrecx;
 import java.util.Deque;
 import java.util.LinkedList;
 
+/**
+ * 20. Valid Parentheses
+ */
 public class LeetCode20 {
     public static void main(String[] args) {
         LeetCode20 leetCode20 = new LeetCode20();

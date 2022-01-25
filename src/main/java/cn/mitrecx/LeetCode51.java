@@ -3,6 +3,8 @@ package cn.mitrecx;
 import java.util.*;
 
 /**
+ * 51. N-Queens
+ *
  * queue 就相当于 中国象棋里的加强版的车, queue 可以走横竖两条直线, 还可以走两条对角线.
  * n 皇后问题需要穷举(遍历)找答案.
  * 穷举可以使用回溯算法.

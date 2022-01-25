@@ -1,5 +1,8 @@
 package cn.mitrecx;
 
+/**
+ * 28. Implement strStr()
+ */
 public class LeetCode28 {
     public static void main(String[] args) {
         LeetCode28 leetCode28 = new LeetCode28();

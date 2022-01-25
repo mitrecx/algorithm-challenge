@@ -1,5 +1,8 @@
 package cn.mitrecx;
 
+/**
+ * 36. Valid Sudoku
+ */
 public class LeetCode36 {
     public static void main(String[] args) {
         LeetCode36 leetCode36 = new LeetCode36();

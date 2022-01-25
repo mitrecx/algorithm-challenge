@@ -1,5 +1,8 @@
 package cn.mitrecx;
 
+/**
+ * 43. Multiply Strings
+ */
 public class LeetCode43 {
     public static void main(String[] args) {
         LeetCode43 leetCode43 = new LeetCode43();

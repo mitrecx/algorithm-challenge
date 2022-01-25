@@ -5,18 +5,24 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 56. Merge Intervals
- * https://leetcode.com/problems/merge-intervals/
+ * 57. Insert Interval
  */
-public class LeetCode56 {
+public class LeetCode57 {
     public static void main(String[] args) {
-        int[][] intervals = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
-        LeetCode56 leetCode56 = new LeetCode56();
-        int[][] results = leetCode56.merge(intervals);
+        int[][] intervals = {{1, 3}, {6, 9}};
+        int newInterval[] = {2, 5};
+        LeetCode57 leetCode57 = new LeetCode57();
+        int[][] results = leetCode57.insert(intervals, newInterval);
         for (int[] r : results) {
             Arrays.stream(r).forEach(s -> System.out.print(s + " "));
             System.out.println();
         }
+    }
+
+    public int[][] insert(int[][] intervals, int[] newInterval) {
+        int[][] allIntervals = Arrays.copyOf(intervals, intervals.length + 1);
+        allIntervals[intervals.length] = newInterval;
+        return merge(allIntervals);
     }
 
     public int[][] merge(int[][] intervals) {
@@ -32,5 +38,4 @@ public class LeetCode56 {
         }
         return merged.toArray(new int[merged.size()][]);
     }
-
 }

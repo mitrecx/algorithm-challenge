@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 39. Combination Sum
+ *
  * 定义递归函数 dfs(target, combine, idx) 表示当前 在 candidates 数组 的第 idx 位,
  * 还剩 target 要组合, 已经组合的列表为 combine.
  * <p>

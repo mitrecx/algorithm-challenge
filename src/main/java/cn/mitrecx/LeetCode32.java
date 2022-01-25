@@ -2,6 +2,9 @@ package cn.mitrecx;
 
 import java.util.LinkedList;
 
+/**
+ * 32. Longest Valid Parentheses
+ */
 public class LeetCode32 {
     public static void main(String[] args) {
         LeetCode32 leetCode32 = new LeetCode32();

@@ -1,5 +1,8 @@
 package cn.mitrecx;
 
+/**
+ * 42. Trapping Rain Water
+ */
 public class LeetCode42 {
     public static void main(String[] args) {
         LeetCode42 leetCode42 = new LeetCode42();

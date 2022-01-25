@@ -3,7 +3,19 @@ package cn.mitrecx;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 3. Longest Substring Without Repeating Characters
+ * https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ */
 public class LeetCode3 {
+    public static void main(String[] args) {
+        LeetCode3 leetCode3 = new LeetCode3();
+        // 5
+        System.out.println(leetCode3.lengthOfLongestSubstring("tmmzuxt"));
+        // 3
+        System.out.println(leetCode3.lengthOfLongestSubstring("pwwkew"));
+    }
+
     /**
      * Sliding Window
      */
@@ -24,13 +36,5 @@ public class LeetCode3 {
             cache.put(s.charAt(right), right);
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        LeetCode3 leetCode3 = new LeetCode3();
-        // 5
-        System.out.println(leetCode3.lengthOfLongestSubstring("tmmzuxt"));
-        // 3
-        System.out.println(leetCode3.lengthOfLongestSubstring("pwwkew"));
     }
 }

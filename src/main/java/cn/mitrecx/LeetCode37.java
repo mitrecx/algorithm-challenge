@@ -3,10 +3,10 @@ package cn.mitrecx;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 37. Sudoku Solver
+ */
 public class LeetCode37 {
-
-
-
 
     public static void main(String[] args) {
         LeetCode37 leetCode37 = new LeetCode37();

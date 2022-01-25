@@ -1,5 +1,8 @@
 package cn.mitrecx;
 
+/**
+ * 38. Count and Say
+ */
 public class LeetCode38 {
     public static void main(String[] args) {
         LeetCode38 leetCode38 = new LeetCode38();

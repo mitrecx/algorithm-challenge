@@ -1,6 +1,42 @@
 package cn.mitrecx;
 
+/**
+ * 2. Add Two Numbers
+ * https://leetcode.com/problems/add-two-numbers/
+ */
 public class LeetCode2 {
+
+    public static void main(String[] args) {
+        ListNode l1 = new ListNode(9);
+        ListNode h1 = l1;
+        l1.next = new ListNode(9);
+        l1 = l1.next;
+        l1.next = new ListNode(9);
+        l1 = l1.next;
+        l1.next = new ListNode(9);
+        l1 = l1.next;
+        l1.next = new ListNode(9);
+        l1 = l1.next;
+        l1.next = new ListNode(9);
+        l1 = l1.next;
+        l1.next = new ListNode(9);
+
+        ListNode l2 = new ListNode(9);
+        ListNode h2 = l2;
+        l2.next = new ListNode(9);
+        l2 = l2.next;
+        l2.next = new ListNode(9);
+        l2 = l2.next;
+        l2.next = new ListNode(9);
+
+        LeetCode2 leetCode2 = new LeetCode2();
+        ListNode r = leetCode2.addTwoNumbers(h1, h2);
+        while (r != null) {
+            System.out.println(r.val);
+            r = r.next;
+        }
+
+    }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode result = new ListNode();
@@ -32,38 +68,5 @@ public class LeetCode2 {
             result.next = new ListNode(carry);
         }
         return head;
-    }
-
-    public static void main(String[] args) {
-
-        ListNode l1 = new ListNode(9);
-        ListNode h1 = l1;
-        l1.next = new ListNode(9);
-        l1 = l1.next;
-        l1.next = new ListNode(9);
-        l1 = l1.next;
-        l1.next = new ListNode(9);
-        l1 = l1.next;
-        l1.next = new ListNode(9);
-        l1 = l1.next;
-        l1.next = new ListNode(9);
-        l1 = l1.next;
-        l1.next = new ListNode(9);
-
-        ListNode l2 = new ListNode(9);
-        ListNode h2 = l2;
-        l2.next = new ListNode(9);
-        l2 = l2.next;
-        l2.next = new ListNode(9);
-        l2 = l2.next;
-        l2.next = new ListNode(9);
-
-        LeetCode2 leetCode2 = new LeetCode2();
-        ListNode r = leetCode2.addTwoNumbers(h1, h2);
-        while (r != null) {
-            System.out.println(r.val);
-            r = r.next;
-        }
-
     }
 }

@@ -2,6 +2,9 @@ package cn.mitrecx;
 
 import java.util.*;
 
+/**
+ * 49. Group Anagrams
+ */
 public class LeetCode49 {
     public static void main(String[] args) {
         String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};

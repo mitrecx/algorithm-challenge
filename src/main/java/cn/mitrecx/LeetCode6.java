@@ -1,5 +1,10 @@
 package cn.mitrecx;
 
+//TODO
+
+/**
+ * 6. Zigzag Conversion
+ */
 public class LeetCode6 {
 //    public String convert(String s, int numRows) {
 //
