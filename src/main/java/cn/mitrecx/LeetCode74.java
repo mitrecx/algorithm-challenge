@@ -40,13 +40,18 @@ public class LeetCode74 {
                 backRow = midRow - 1;
             }
         }
-        int left = 0, right = tail;
+
+        return binarySearch(matrix[frontRow], target);
+    }
+
+    public boolean binarySearch(int[] row, int target) {
+        int left = 0, right = row.length - 1;
         while (left <= right) {
             int mid = (left + right) / 2;
-            if (target == matrix[frontRow][mid]) {
+            if (target == row[mid]) {
                 return true;
             }
-            if (target < matrix[frontRow][mid]) {
+            if (target < row[mid]) {
                 right = mid - 1;
             } else {
                 left = mid + 1;
