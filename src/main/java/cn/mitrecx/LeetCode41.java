@@ -2,6 +2,10 @@ package cn.mitrecx;
 
 /**
  * 41. First Missing Positive
+ * hard
+ *
+ * 将数组视为 hash 表, 原地哈希.
+ * hash 规则: 把 1 放在下标为 0 的位置, 把 2 放在下标为 1 的位置, ...
  */
 public class LeetCode41 {
     public static void main(String[] args) {
