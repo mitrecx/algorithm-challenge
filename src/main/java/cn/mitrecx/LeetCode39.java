@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * 39. Combination Sum
- *
+ * <p>
  * 定义递归函数 dfs(target, combine, idx) 表示当前 在 candidates 数组 的第 idx 位,
  * 还剩 target 要组合, 已经组合的列表为 combine.
  * <p>
@@ -36,7 +36,7 @@ public class LeetCode39 {
         return result;
     }
 
-    private void dfs(List<List<Integer>> result,
+    public void dfs(List<List<Integer>> result,
                      List<Integer> combine,
                      int[] candidates,
                      int index,
@@ -50,8 +50,6 @@ public class LeetCode39 {
             return;
         }
 
-        // 跳过当前元素
-        dfs(result, combine, candidates, index + 1, target);
         // 选择当前元素
         if (target - candidates[index] >= 0) {
             combine.add(candidates[index]);
@@ -60,5 +58,7 @@ public class LeetCode39 {
             combine.remove(combine.size() - 1);
         }
 
+        // 跳过当前元素
+        dfs(result, combine, candidates, index + 1, target);
     }
 }
