@@ -2,6 +2,7 @@ package cn.mitrecx;
 
 /**
  * 26. Remove Duplicates from Sorted Array
+ * @see LeetCode80
  */
 public class LeetCode26 {
     public static void main(String[] args) {
