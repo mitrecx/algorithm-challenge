@@ -39,10 +39,10 @@ public class LeetCode95 {
 
         // 枚举可行根节点
         for (int i = start; i <= end; i++) {
-            // 获得所有可行的左子树集合
+            // 获得所有可行的左子树集合, currRoot根节点的值大于左子树所有节点的值
             List<TreeNode> leftTrees = generateTrees(start, i - 1);
 
-            // 获得所有可行的右子树集合
+            // 获得所有可行的右子树集合, currRoot根节点的值小于右子树所有节点的值
             List<TreeNode> rightTrees = generateTrees(i + 1, end);
 
             // 从左子树集合中选出一棵左子树，从右子树集合中选出一棵右子树，拼接到根节点上
