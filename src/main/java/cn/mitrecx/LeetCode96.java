@@ -3,7 +3,7 @@ package cn.mitrecx;
 /**
  * 96. Unique Binary Search Trees
  * Medium
- * 影_
+ * 上_
  * dynamic programming(动态规划)
  * 状态转移方程推导:
  * G(n): 长度为 n 的序列能构成的不同二叉搜索树的个数,

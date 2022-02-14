@@ -48,10 +48,11 @@ public class LeetCode95 {
             // 从左子树集合中选出一棵左子树，从右子树集合中选出一棵右子树，拼接到根节点上
             for (TreeNode left : leftTrees) {
                 for (TreeNode right : rightTrees) {
-                    TreeNode currTree = new TreeNode(i);
-                    currTree.left = left;
-                    currTree.right = right;
-                    allTrees.add(currTree);
+                    //
+                    TreeNode currRoot = new TreeNode(i);
+                    currRoot.left = left;
+                    currRoot.right = right;
+                    allTrees.add(currRoot);
                 }
             }
         }
