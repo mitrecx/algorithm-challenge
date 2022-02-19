@@ -11,7 +11,6 @@ import java.util.List;
  */
 public class LeetCode77 {
 
-
     public static void main(String[] args) {
         LeetCode77 leetCode77 = new LeetCode77();
         leetCode77.combine(4, 2);
@@ -29,7 +28,7 @@ public class LeetCode77 {
     }
 
     /**
-     * @see LeetCode39#dfs(java.util.List, java.util.List, int[], int, int)
+     * @see LeetCode39#dfs(int[], int, int)
      */
     public void dfs(int cur, int n, int k) {
         // 剪枝: temp 长度加上区间 [cur, n] 的长度小于 k，不可能构造出长度为 k 的 temp

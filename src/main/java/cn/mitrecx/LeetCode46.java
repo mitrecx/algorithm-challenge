@@ -17,32 +17,31 @@ public class LeetCode46 {
         System.out.println(lists);
     }
 
+    List<List<Integer>> result = new ArrayList<>();
+    List<Integer> path = new ArrayList<>();
+
     // 可以挨个取nums里的元素, 利用回溯, 构造一个不重不漏的树
     public List<List<Integer>> permute(int[] nums) {
-        List<List<Integer>> result = new ArrayList<>();
         // 记录各个位置上的元素是否被使用
         boolean[] used = new boolean[nums.length];
-        List<Integer> path = new ArrayList<>();
-        dfs(nums, 0, path, used, result);
+
+        dfs(nums, 0, used);
         return result;
     }
 
-    private void dfs(int[] nums,
-                     int depth,
-                     List<Integer> path,
-                     boolean[] used,
-                     List<List<Integer>> result) {
+    private void dfs(int[] nums, int depth, boolean[] used) {
         if (depth == nums.length) {
             result.add(new ArrayList<>(path));
             return;
         }
+
         for (int i = 0; i < nums.length; i++) {
             if (used[i]) {
                 continue;
             }
             path.add(nums[i]);
             used[i] = true;
-            dfs(nums, depth + 1, path, used, result);
+            dfs(nums, depth + 1, used);
             used[i] = false;
             path.remove(path.size() - 1);
         }
