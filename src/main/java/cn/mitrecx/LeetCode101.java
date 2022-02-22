@@ -1,8 +1,8 @@
 package cn.mitrecx;
 
 /**
- * Title:
- * Difficulty:
+ * Title: 101. Symmetric Tree
+ * Difficulty: Easy
  * Self Difficulty:
  * kw: 二叉树(binary tree)
  */
