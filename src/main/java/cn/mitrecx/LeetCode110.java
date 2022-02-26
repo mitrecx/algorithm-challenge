@@ -27,7 +27,7 @@ public class LeetCode110 {
         return Math.abs(height(root.left) - height(root.right)) <= 1 && isBalanced(root.left) && isBalanced(root.right);
     }
 
-    // 树的(最大)深度
+    // 树的深度, 最大深度
     public int height(TreeNode root) {
         if (root == null) {
             return 0;
