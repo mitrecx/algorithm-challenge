@@ -1,15 +1,13 @@
 package cn.mitrecx;
 
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Title: 102. Binary Tree Level Order Traversal
  * Difficulty: Medium
  * Self Difficulty: 下
- * kw: 二叉树(binary tree)
+ * kw: 二叉树(binary tree), 层序遍历(Level Order Traversal)
+ *
  * @see LeetCode107
  */
 public class LeetCode102 {
@@ -60,4 +58,36 @@ public class LeetCode102 {
         }
         return r;
     }
+
+    public List<List<Integer>> levelOrder_2b(TreeNode root) {
+        List<List<Integer>> ans = new ArrayList<>();
+
+        if (root == null) {
+            return ans;
+        }
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+            List<Integer> level = new ArrayList<>();
+            int currentLevelSize = queue.size();
+            for (int i = 1; i <= currentLevelSize; ++i) {
+                TreeNode node = queue.poll();
+                // 处理
+                level.add(node.val);
+                // 下一层
+                if (node.left != null) {
+                    queue.offer(node.left);
+                }
+                if (node.right != null) {
+                    queue.offer(node.right);
+                }
+            }
+            ans.add(level);
+        }
+
+        return ans;
+    }
+
 }
