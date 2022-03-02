@@ -7,7 +7,7 @@ import java.util.List;
  * Title: 118. Pascal's Triangle
  * Difficulty: Easy
  * Self Difficulty: 下
- * kw:
+ * kw: 杨辉三角
  */
 public class LeetCode118 {
     public static void main(String[] args) {
@@ -52,7 +52,7 @@ public class LeetCode118 {
      * 来源：力扣（LeetCode）
      * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
      */
-    public List<List<Integer>> generate_2(int numRows) {
+    public List<List<Integer>> generate_2b(int numRows) {
         List<List<Integer>> ret = new ArrayList<List<Integer>>();
         for (int i = 0; i < numRows; ++i) {
             List<Integer> row = new ArrayList<Integer>();
