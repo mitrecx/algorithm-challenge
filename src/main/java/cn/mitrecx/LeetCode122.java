@@ -4,7 +4,7 @@ package cn.mitrecx;
  * Title: 122. Best Time to Buy and Sell Stock II
  * Difficulty: Medium
  * Self Difficulty:
- * kw:
+ * kw: 贪心算法
  */
 public class LeetCode122 {
     public static void main(String[] args) {
