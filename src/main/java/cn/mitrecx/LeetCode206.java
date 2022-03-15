@@ -4,7 +4,7 @@ package cn.mitrecx;
  * Title: 206. Reverse Linked List
  * Difficulty: Easy
  * Self Difficulty:
- * kw: 链表
+ * kw: 翻转链表, 双指针
  *
  * @see LeetCode92
  */
