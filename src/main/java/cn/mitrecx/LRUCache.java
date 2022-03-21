@@ -7,7 +7,7 @@ import java.util.Map;
  * Title: 146. LRU Cache
  * Difficulty: Medium
  * Self Difficulty: 上
- * kw: Least Recently Used (LRU) cache, 哈希表, 双向链表
+ * kw: Least Recently Used (LRU) cache, 哈希表, 双向链表, 数据结构实现
  * <p>
  * LRU Cache, 可以通过 "HashMap + 双向链表" 实现. 使用 双向链表 维护缓存使用的时间(先后顺序)
  */
