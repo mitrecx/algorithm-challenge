@@ -1,5 +1,7 @@
 package cn.mitrecx;
 
+import java.util.Arrays;
+
 /**
  * Title: 189. Rotate Array
  * Difficulty: Medium
@@ -8,7 +10,12 @@ package cn.mitrecx;
  */
 public class LeetCode189 {
     public static void main(String[] args) {
-
+        LeetCode189 leetCode189 = new LeetCode189();
+        int[] nums = {1, 2, 3, 4, 5, 6, 7};
+        int k = 3;
+        System.out.println(Arrays.toString(nums));
+        leetCode189.rotate_3b(nums, k);
+        System.out.println(Arrays.toString(nums));
     }
 
     public void rotate(int[] nums, int k) {
@@ -48,7 +55,7 @@ public class LeetCode189 {
      * 需要用 辗转相除法 计算最大公约数。
      * 而且需要了解概念：
      * 两个自然数的 最大公约数(gcd) 与它们的 最小公倍数(lcm) 的乘积等于这两个数的乘积。
-     *
+     * <p>
      * 解题思路：
      * 把数组看成首尾相连的环状数组，假设 p 从下标 0 处出发，依次替换 i1 = (0 + k ) % n，i2 = (i1 + k ) % n，...
      * 那么在绕过 x 圈以后，p 一定会回到 0 处。 假设这个过程总共遍历了 m 个元素，
