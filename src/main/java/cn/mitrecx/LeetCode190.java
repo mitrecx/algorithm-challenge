@@ -22,7 +22,7 @@ public class LeetCode190 {
         int r = 0;
         for (int i = 0; i < 32; i++) {
             r |= (n & 1) << (31 - i);
-            //
+            // unsigned right shift operator >>>
             n >>>= 1;
         }
         return r;
