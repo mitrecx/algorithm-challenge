@@ -1,4 +1,4 @@
-package cn.mitrecx;
+package cn.mitrecx.leetcode801_1000;
 
 /**
  * hard

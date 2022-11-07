@@ -1,6 +1,5 @@
 package cn.mitrecx.leetcode1_200;
 
-import cn.mitrecx.LeetCode206;
 import cn.mitrecx.ListNode;
 
 /**
@@ -9,7 +8,7 @@ import cn.mitrecx.ListNode;
  * Self Difficulty: 中
  * kw: 双指针(two pointers), 翻转链表(Reverse Linked List)
  *
- * @see LeetCode206
+ * @see cn.mitrecx.leetcode201_400.LeetCode206
  */
 public class LeetCode143 {
     public static void main(String[] args) {
