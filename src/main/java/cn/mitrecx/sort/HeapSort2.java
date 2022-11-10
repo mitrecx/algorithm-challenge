@@ -15,14 +15,18 @@ public class HeapSort2 {
         return 2 * (i + 1);
     }
 
+    /**
+     * 从下标 i 处 开始最大堆化
+     * @param a
+     * @param i
+     * @param heapSize
+     */
     public void maxHeapify(int[] a, int i, int heapSize) {
         int l = left(i);
         int r = right(i);
-        int largestIndex;
+        int largestIndex  = i;
         if (l < heapSize && a[l] > a[i]) {
             largestIndex = l;
-        } else {
-            largestIndex = i;
         }
 
         if (r < heapSize && a[r] > a[largestIndex]) {
@@ -38,10 +42,9 @@ public class HeapSort2 {
     }
 
     public void buildMaxHeap(int[] a) {
-        int heapSize = a.length;
         // i 从第一个非叶子结点开始构造
-        for (int i = (heapSize / 2 - 1); i >= 0; i--) {
-            maxHeapify(a, i, heapSize);
+        for (int i = (a.length / 2 - 1); i >= 0; i--) {
+            maxHeapify(a, i, a.length);
         }
     }
 
