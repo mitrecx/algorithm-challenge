@@ -22,6 +22,10 @@ public class ListNode {
     }
 
     public static void print(ListNode node) {
+        if (node == null) {
+            System.out.println("null");
+            return;
+        }
         while (node != null) {
             System.out.print(node.val + " ");
             node = node.next;
